@@ -1,4 +1,4 @@
-use test_module;
+use baithi;
 create table product(
 id int not null primary key auto_increment,
 name varchar(50),
