@@ -1,0 +1,16 @@
+use test_module;
+create table product(
+id int not null primary key auto_increment,
+name varchar(50),
+price int,
+quantity int,
+color varchar(50),
+description varchar(255),
+category_id int,
+foreign key(category_id) references category(id)
+);
+
+create table category(
+id int primary key auto_increment,
+name varchar(50)
+);
